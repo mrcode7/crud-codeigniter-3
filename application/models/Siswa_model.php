@@ -15,4 +15,10 @@ class Siswa_model extends CI_Model
         $this->db->insert($table, $data);
     }
 
+    public function update_data($data, $table)
+    {
+        $this->db->where('id_siswa', $data['id_siswa']);
+        $this->db->update($table, $data);
+    }
+
 }
