@@ -1,7 +1,9 @@
+<?= $this->session->flashdata('pesan'); ?>
+
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title">Data Siswa
-    </h3>
+    <a href="<?= base_url('siswa/tambah'); ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah
+      Siswa</a>
   </div>
   <!-- /.card-header -->
   <div class="card-body">
