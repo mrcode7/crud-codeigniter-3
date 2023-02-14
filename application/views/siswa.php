@@ -41,7 +41,8 @@
             <td>
               <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editSiswa<?= $ssw->id_siswa ?>"><i
                   class="fas fa-edit"></i></button>
-              <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+              <a href="<?= base_url('siswa/delete/' . $ssw->id_siswa) ?>" class="btn btn-danger btn-sm"
+                onclick="return confirm('Apakah yakin Data ini mau dihapus?')"><i class="fas fa-trash"></i></a>
             </td>
           </tr>
         <?php endforeach; ?>
